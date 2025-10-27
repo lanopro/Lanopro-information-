@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Made by - SHREYASH SINGH RAWAT</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: 'Poppins', system-ui, sans-serif;
+      display:flex;align-items:center;justify-content:center;
+      background: radial-gradient(circle at 20% 20%, #0b0f0d 0%, #121a17 40%, #1c2420 100%);
+      color:#d8e3db;
+      padding:32px;
+    }.bg-shape{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(60px);opacity:.18;mix-blend-mode:screen}
+.b1{background:radial-gradient(circle at 30% 30%, #00a676, #004d40);left:-120px;top:-80px}
+.b2{background:radial-gradient(circle at 60% 60%, #7ef7c6, #00a676);right:-140px;bottom:-120px}
+
+.card{
+  width:100%;max-width:920px;background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.06);backdrop-filter: blur(8px);
+  border-radius:20px;padding:28px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center;box-shadow:0 10px 30px rgba(2,6,23,.6)
+}
+
+.avatar{
+  width:200px;height:200px;border-radius:16px;overflow:hidden;position:relative;border:2px solid rgba(0,166,118,0.4);background:#0d1512;
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.ribbon{position:absolute;left:-48px;top:12px;background:linear-gradient(90deg,#00a676,#7ef7c6);color:#071226;font-weight:700;padding:6px 84px;transform:rotate(-20deg);box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+h1{font-size:22px;letter-spacing:0.5px;margin-bottom:6px}
+.subtitle{opacity:.85;font-size:13px;margin-bottom:14px}
+
+.bio{font-size:15px;line-height:1.5;color:#d8e3db;margin-bottom:12px}
+
+.meta{display:flex;flex-direction:column;gap:10px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.05);font-size:13px}
+
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.btn{padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,rgba(0,166,118,0.3),rgba(0,166,118,0.1));border:1px solid rgba(0,166,118,0.3);text-decoration:none;color:#d8e3db;font-weight:600;transition:0.2s}
+.btn:hover{background:rgba(0,166,118,0.4)}
+
+.made-by{font-size:12px;opacity:.8;margin-top:12px}
+
+.footer{grid-column:1/-1;border-top:1px dashed rgba(255,255,255,0.03);padding-top:12px;margin-top:8px;display:flex;justify-content:space-between;align-items:center}
+
+@media (max-width:760px){
+  .card{grid-template-columns:1fr;max-width:420px}
+  .avatar{width:140px;height:140px;margin:0 auto}
+  .ribbon{display:none}
+}
+
+@keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+.card{animation:floaty 8s ease-in-out infinite}
+
+  </style>
+</head>
+<body>
+  <div class="bg-shape">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </div>  <main class="card" role="main">
+    <div class="avatar">
+      <div class="ribbon">MADE BY</div>
+      <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/73/Toji_anime_design_2.png" alt="Toji Fushiguro" />
+    </div><section>
+  <h1>SHREYASH SINGH RAWAT</h1>
+  <div class="subtitle">Cool · Nonchalant · Toji-inspired</div>
+
+  <p class="bio">This is <strong>Shreyash Singh Rawat</strong> — a cool and nonchalant web designer. I am currently working on a big project. If you want to start your coding journey and need help, contact me.</p>
+
+  <div class="meta">
+    <div class="row"><span class="pill">Born: 2010</span><span class="pill">Gender: Male</span><span class="pill">School: Sun Valley International School</span></div>
+    <div class="row"><span class="pill">Roblox: Lanoprois</span><span class="pill">Instagram: @ky_lano</span></div>
+    <div class="row"><span class="pill">Mobile: <a href="tel:+918865083516" style="color:inherit;text-decoration:underline;">8865083516</a></span></div>
+  </div>
+
+  <div class="links">
+    <a class="btn" href="tel:+918865083516">Call</a>
+    <a class="btn" href="https://instagram.com/ky_lano" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn" href="https://www.roblox.com/users/" target="_blank" rel="noopener">Roblox</a>
+  </div>
+
+  <div class="made-by">Made by — <strong>SHREYASH SINGH RAWAT</strong></div>
+
+  <div class="footer">
+    <div style="font-size:13px;opacity:.9">Toji-themed portfolio · Stay calm & code</div>
+    <div style="font-size:13px;opacity:.8">© <strong>Shreyash</strong></div>
+  </div>
+</section>
+
+  </main></body>
+</html>
